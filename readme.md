@@ -32,29 +32,36 @@ Follow the instructions below to run and verify the tests.
 
 Sends 5 random shuffle requests with isLogged set to false.
 Verify the entries in MongoDB using mongo-express at http://localhost:8081.
+
 ---
 *updateAllIsLoggedFalse*
 
 Updates all entries with isLogged set to false to true.
 Verify the updated entries in MongoDB using mongo-express.
+
 ---
 *clearDbTest*
 
 Clears all records in the database.
 Verify that the database is empty using mongo-express.
+
 ---
 
 #### ShuffleMsControllerTest
 
 *shouldCreateShuffleRequestAndStoreInDB*
 Sends a shuffle request and verifies it is stored in the database.
+
 ---
 *shouldGetAllLoggedFalseShuffles*
 Retrieves all entries with isLogged set to false and verifies the response.
+
 ---
 
 *shouldUpdateShuffleLogStatus*
 Updates the isLogged status of specific entries and verifies the update.
+
+---
 
 ### Step 3: Run Tests for Log MS
 ```info
@@ -74,6 +81,7 @@ Verify the entries in the log table using mongo-express.
 3. Run compareAndDeleteRecords:
 This will compare and delete logged entries from the shuffle-service.
 
+---
 
 ### Accessing mongo-express:
 
